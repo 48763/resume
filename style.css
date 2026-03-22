@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #333333;
-    --secondary-color: #666666;
-    --background-color: #f4f5f6;
-    --paper-color: #ffffff;
-    --border-color: #e0e0e0;
-    --sidebar-bg: #fafafa;
-    --accent-color: #2c3e50;
-    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --primary-color: #212529;
+    --secondary-color: #495057;
+    --text-color: #343a40;
+    --light-bg: #f8f9fa;
+    --border-color: #e9ecef;
+    --accent-color: #0d6efd;
+    --tag-bg: #e2e8f0;
+    --tag-text: #475569;
 }
 
 * {
@@ -16,124 +16,109 @@
 }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--background-color);
-    color: var(--primary-color);
+    font-family: 'Inter', sans-serif;
+    background-color: #f1f5f9;
+    color: var(--text-color);
     line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 1rem;
 }
 
-.resume-wrapper {
+.resume-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     display: flex;
-    flex-direction: row;
-    background-color: var(--paper-color);
-    max-width: 1000px;
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    min-height: 100vh;
 }
 
-/* Sidebar Styling */
+/* Sidebar */
 .sidebar {
     width: 35%;
-    background-color: var(--sidebar-bg);
-    padding: 3rem 2rem;
+    background-color: var(--light-bg);
+    padding: 40px;
     border-right: 1px solid var(--border-color);
 }
 
 .profile-header {
-    margin-bottom: 2rem;
+    margin-bottom: 40px;
 }
 
-.name {
+.profile-header h1 {
     font-size: 2.2rem;
     font-weight: 700;
-    color: var(--accent-color);
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.5px;
-}
-
-.title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--secondary-color);
-    margin-bottom: 0.5rem;
+    color: var(--primary-color);
     letter-spacing: 1px;
+    margin-bottom: 5px;
 }
 
-.headline {
+.profile-header .title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.profile-header p {
     font-size: 0.95rem;
-    font-style: italic;
     color: var(--secondary-color);
-    margin-bottom: 1rem;
-}
-
-.location {
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
-    gap: 0.4rem;
-    font-size: 0.9rem;
+    gap: 8px;
+}
+
+.nav-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
     color: var(--secondary-color);
-}
-
-.location svg {
-    color: var(--secondary-color);
-}
-
-.section-divider {
-    height: 1px;
-    background-color: var(--border-color);
-    margin: 2rem 0;
-    width: 100%;
-}
-
-/* Main Content Styling */
-.main-content {
-    width: 65%;
-    padding: 3rem 2.5rem;
-    background-color: var(--paper-color);
-}
-
-.section-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--accent-color);
-    margin-bottom: 1.5rem;
-    letter-spacing: 1.5px;
-    border-bottom: 2px solid var(--border-color);
-    padding-bottom: 0.5rem;
-    display: inline-block;
-}
-
-.sidebar .section-title {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-/* Skills */
-.skill-group {
-    margin-bottom: 1.5rem;
-}
-
-.skill-title {
+    font-weight: 500;
     font-size: 0.9rem;
-    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.nav-links a.active {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--accent-color);
 }
 
-.skill-list {
-    list-style-type: none;
-    color: var(--secondary-color);
-    font-size: 0.95rem;
+/* Sections */
+.section {
+    margin-bottom: 35px;
 }
 
-.skill-list li {
-    margin-bottom: 0.2rem;
+.section h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 /* Custom Skill Tags from user */
@@ -145,8 +130,8 @@ body {
 .fr-class-skill-tag {
     display: inline-flex;
     align-items: center;
-    background-color: #e2e8f0;
-    color: #475569;
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -164,144 +149,124 @@ body {
     margin-right: 4px;
 }
 
-/* Experience */
-.job-item {
-    margin-bottom: 2.5rem;
+/* Main Content */
+.main-content {
+    width: 65%;
+    padding: 40px 50px;
 }
 
-.job-item:last-child {
-    margin-bottom: 0;
+/* Timeline/Experience */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--border-color);
 }
 
-.job-header {
+.timeline-item {
+    position: relative;
+    margin-bottom: 35px;
     display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    margin-bottom: 0.8rem;
+    gap: 20px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -27px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    border: 2px solid #fff;
 }
 
 .entity-logo {
     width: 48px;
     height: 48px;
-    border-radius: 4px;
+    border-radius: 8px;
     object-fit: contain;
+    background-color: #fff;
+    padding: 4px;
     border: 1px solid var(--border-color);
-    padding: 2px;
 }
 
-.entity-logo-sm {
-    width: 40px;
-    height: 40px;
-    border-radius: 4px;
-    object-fit: contain;
-    border: 1px solid var(--border-color);
-    padding: 2px;
+.entity-logo.large {
+    width: 56px;
+    height: 56px;
 }
 
-.job-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.timeline-content {
     flex: 1;
 }
 
-.job-title-company h4 {
-    font-size: 1.1rem;
-    font-weight: 700;
+.timeline-content h4 {
+    font-size: 1.2rem;
     color: var(--primary-color);
+    margin-bottom: 4px;
 }
 
-.company-name {
+.timeline-content h5 {
     font-size: 1rem;
-    font-weight: 600;
     color: var(--secondary-color);
-    display: block;
-}
-
-.job-meta {
-    text-align: right;
-    font-size: 0.9rem;
-    color: var(--secondary-color);
-}
-
-.job-date {
-    display: block;
     font-weight: 500;
+    margin-bottom: 6px;
 }
 
-.job-location {
-    display: block;
+.date {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 12px;
 }
 
-.job-desc {
-    font-size: 0.95rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-.job-bullets {
+.timeline-content ul {
     list-style-type: disc;
-    padding-left: 1.2rem;
-    color: var(--primary-color);
+    padding-left: 20px;
+    color: var(--secondary-color);
+}
+
+.timeline-content li {
+    margin-bottom: 6px;
     font-size: 0.95rem;
 }
 
-.job-bullets li {
-    margin-bottom: 0.3rem;
+/* Generic List Items (Sidebar) */
+.item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
-/* Education & Certs */
-.edu-item, .cert-item {
-    margin-bottom: 1.5rem;
-}
-
-.edu-item:last-child, .cert-item:last-child {
+.item:last-child {
     margin-bottom: 0;
 }
 
-.edu-school, .cert-name {
+.item-content h4 {
     font-size: 1rem;
-    font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 0.2rem;
+    margin-bottom: 4px;
 }
 
-.edu-degree, .cert-issuer {
-    font-size: 0.95rem;
-    color: var(--primary-color);
-    margin-bottom: 0.2rem;
-}
-
-.edu-date, .cert-date {
-    display: block;
+.item-content p {
     font-size: 0.9rem;
     color: var(--secondary-color);
+    margin-bottom: 4px;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .resume-wrapper {
+@media (max-width: 900px) {
+    .resume-container {
         flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .sidebar, .main-content {
+        width: 100%;
+        border-right: none;
     }
     
     .sidebar {
-        width: 100%;
-        border-right: none;
         border-bottom: 1px solid var(--border-color);
-        padding: 2rem;
-    }
-    
-    .main-content {
-        width: 100%;
-        padding: 2rem;
-    }
-
-    .job-header {
-        flex-direction: column;
-    }
-
-    .job-meta {
-        text-align: left;
-        margin-top: 0.3rem;
     }
 }
