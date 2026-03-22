@@ -4,203 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edgar Cheng - Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="resume-wrapper">
+    <div class="resume-container">
+        <!-- Sidebar -->
         <aside class="sidebar">
             <div class="profile-header">
-                <h1 class="name">EDGAR CHENG</h1>
+                <h1>EDGAR CHENG</h1>
                 <h2 class="title">SR. DEVOPS ENGINEER</h2>
-                <p class="headline">H3110 W0r1d!</p>
-                <div class="location">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                    Taipei City, Taiwan
+                <p class="tagline"><i class="fa-solid fa-terminal"></i> H3110 W0r1d!</p>
+                <p class="location"><i class="fa-solid fa-location-dot"></i> Taipei City, Taiwan</p>
+                <div class="nav-links">
+                    <a href="#" class="active">關於 (About)</a>
+                    <a href="#">作品集 (Portfolio)</a>
                 </div>
             </div>
 
-            <div class="section-divider"></div>
-
-            <section class="skills-section">
-                <h3 class="section-title">SKILLS</h3>
-                
-                <div class="skill-group">
-                    <h4 class="skill-title">TECH STACK</h4>
-                    <ul class="skill-list">
-                        <li>Kubernetes</li>
-                        <li>Docker</li>
-                        <li>Traefik</li>
-                        <li>ArgoCD</li>
-                        <li>Jenkins</li>
-                        <li>Nginx</li>
-                        <li>Prometheus</li>
-                        <li>Grafana</li>
-                    </ul>
+            <div class="section">
+                <h3><i class="fa-solid fa-layer-group"></i> Tech Stack</h3>
+                <div class="tags-custom">
+                    <p><span class="fr-class-skill-tag"><span class="fr-myicon fr-deletable color logos fr-myicon-img" style='background: url("https://raw.githubusercontent.com/48763/devops-note/refs/heads/master/img/icon/kubernetes.svg");'><span class="fr-icon-space-wrapper">&nbsp;</span></span>&nbsp; Kubernetes</span>&nbsp; &nbsp; <span class="fr-class-skill-tag"><span class="fr-myicon fr-deletable color logos fr-myicon-img" style='background: url("https://raw.githubusercontent.com/48763/devops-note/refs/heads/master/img/icon/aws.svg");'><span class="fr-icon-space-wrapper">&nbsp;</span></span>&nbsp; Docker</span>&nbsp; &nbsp; <span class="fr-class-skill-tag"><span class="fr-myicon fr-deletable color logos fr-myicon-img" style='background: url("https://raw.githubusercontent.com/docker-library/docs/a6cc2c5f4bc6658168f2a0abbb0307acaefff80e/traefik/logo.png");'><span class="fr-icon-space-wrapper">&nbsp;</span></span>&nbsp; Traefik</span>&nbsp; &nbsp; <span class="fr-class-skill-tag"><span class="fr-myicon fr-deletable color logos fr-myicon-img" style='background: url("https://argo-cd.readthedocs.io/en/stable/assets/logo.png");'><span class="fr-icon-space-wrapper">&nbsp;</span></span>&nbsp; ArgoCD</span>&nbsp; &nbsp;</p>
+                    <p><span class="fr-class-skill-tag"><span class="fr-myicon fr-deletable color logos fr-myicon-img" style='background: url("https://raw.githubusercontent.com/48763/devops-note/refs/heads/master/img/icon/jenkins.svg");'><span class="fr-icon-space-wrapper">&nbsp;</span></span> Jenkins</span>&nbsp; &nbsp; <span class="fr-class-skill-tag"><span class="fr-myicon fr-deletable color logos fr-myicon-img" style='background: url("https://raw.githubusercontent.com/48763/devops-note/refs/heads/master/img/icon/nginx.svg");'><span class="fr-icon-space-wrapper">&nbsp;</span></span>&nbsp; Nginx</span>&nbsp; &nbsp; <span class="fr-class-skill-tag"><span class="fr-myicon fr-deletable color logos fr-myicon-img" style='background: url("https://raw.githubusercontent.com/48763/devops-note/refs/heads/master/img/icon/prometheus.svg");'><span class="fr-icon-space-wrapper">&nbsp;</span></span>&nbsp; Prometheus</span>&nbsp; &nbsp; <span class="fr-class-skill-tag"><span class="fr-myicon fr-deletable color logos fr-myicon-img" style='background: url("https://raw.githubusercontent.com/48763/devops-note/refs/heads/master/img/icon/grafana.svg");'><span class="fr-icon-space-wrapper">&nbsp;</span></span>&nbsp; Grafana</span>&nbsp; &nbsp;</p>
                 </div>
+            </div>
 
-                <div class="skill-group">
-                    <h4 class="skill-title">CLOUD</h4>
-                    <ul class="skill-list">
-                        <li>Amazon Web Services</li>
-                        <li>Google Cloud Platform</li>
-                    </ul>
+            <div class="section">
+                <h3><i class="fa-solid fa-cloud"></i> Cloud</h3>
+                <div class="tags">
+                    <span class="tag">Amazon Web Services</span>
+                    <span class="tag">Google Cloud Platform</span>
                 </div>
+            </div>
 
-                <div class="skill-group">
-                    <h4 class="skill-title">PROGRAMMING</h4>
-                    <ul class="skill-list">
-                        <li>Bash</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>Groovy</li>
-                        <li>Node.js</li>
-                    </ul>
+            <div class="section">
+                <h3><i class="fa-solid fa-code"></i> Programming</h3>
+                <div class="tags">
+                    <span class="tag">Bash</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Groovy</span>
+                    <span class="tag">Node.js</span>
                 </div>
-            </section>
+            </div>
+
+            <div class="section">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                <div class="item education-item">
+                    <img src="https://media.cakeresume.com/image/upload/v1629713343/f0fvjleu4heokrquiaov.png" alt="NKUST Logo" class="entity-logo">
+                    <div class="item-content">
+                        <h4>National Kaohsiung University of Science and Technology</h4>
+                        <p>Electronic Engineering</p>
+                        <span class="date">2018 - 2019</span>
+                    </div>
+                </div>
+                <div class="item education-item">
+                    <img src="https://media.cakeresume.com/image/upload/v1625155751/ytiurnkmflqkhkfunvaa.png" alt="Shu-Te Logo" class="entity-logo">
+                    <div class="item-content">
+                        <h4>Shu-Te University</h4>
+                        <p>Department of Computer Science & Information Engineering</p>
+                        <span class="date">2013 - 2017</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3><i class="fa-solid fa-certificate"></i> Licenses & Certifications</h3>
+                <div class="item cert-item">
+                    <img src="https://raw.githubusercontent.com/48763/devops-note/refs/heads/master/img/icon/cisco.svg" alt="Cisco" class="entity-logo">
+                    <div class="item-content">
+                        <h4>CCNA</h4>
+                        <p>Cisco</p>
+                        <span class="date">Issued August 2016</span>
+                    </div>
+                </div>
+            </div>
         </aside>
 
+        <!-- Main Content -->
         <main class="main-content">
-            <section class="experience-section">
-                <h3 class="section-title">WORK EXPERIENCE</h3>
-
-                <div class="job-item">
-                    <div class="job-header">
-                        <div class="job-title-company">
+            <div class="section">
+                <h3><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+                
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <img src="https://media.cakeresume.com/image/upload/s--bYquchlp--/c_pad,fl_png8,h_200,w_200/pcpxrlrb7lobdvvlllbq.png" alt="MAYOHR Logo" class="entity-logo large">
+                        <div class="timeline-content">
                             <h4>SR. SRE</h4>
-                            <span class="company-name">MAYOHR 鼎恒數位科技</span>
-                        </div>
-                        <div class="job-meta">
-                            <span class="job-date">March 2024 - Present</span>
-                            <span class="job-location">Taipei, Taiwan</span>
+                            <h5>MAYOHR 鼎恒數位科技</h5>
+                            <span class="date">March 2024 - Present</span>
+                            <ul>
+                                <li>Focus: Observability (LGTM stack), GitOps (ArgoCD), Kubernetes (AKS), Edge Security (WAF), FinOps.</li>
+                            </ul>
                         </div>
                     </div>
-                    <ul class="job-bullets">
-                        <li>Architected and evolved the company's observability landscape, progressing from a foundational Prometheus setup (2024) to a centralized LGTM (Loki, Grafana, Tempo, Prometheus) platform with OpenTelemetry (2025). This transformation unified monitoring across hybrid environments, enabling distributed tracing and reducing MTTR for complex microservices.</li>
-                        <li>Established a scalable Kubernetes ecosystem managed via ArgoCD (GitOps) and orchestrated the infrastructure strategy for mission-critical product launches (XE, FIDO, AI Agent), managing AKS upgrades (v1.34+) and optimizing node pools for high availability.</li>
-                        <li>Led strategic Edge Security initiatives, including the evaluation and deployment of WAF solutions (Cloudflare/Imperva) and the end-to-end management of external penetration testing cycles for flagship products.</li>
-                        <li>Engineered robust FinOps initiatives by conducting in-depth cost-benefit analyses for vendor solutions (SendGrid) to identify optimal procurement channels, and rightsizing Azure infrastructure components to align technical performance with budget constraints.</li>
-                    </ul>
-                </div>
 
-                <div class="job-item">
-                    <div class="job-header">
-                        <div class="job-title-company">
+                    <!-- Experience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <img src="https://media.cakeresume.com/image/upload/s--3sP_mCRF--/c_pad,fl_png8,h_200,w_200/v1632816731/mqcojw2i6smxvsuztxkg.png" alt="恒遠科技 Logo" class="entity-logo large">
+                        <div class="timeline-content">
                             <h4>SR. DEVOPS ENGINEER</h4>
-                            <span class="company-name">恒遠科技有限公司</span>
-                        </div>
-                        <div class="job-meta">
-                            <span class="job-date">September 2022 - Present</span>
-                            <span class="job-location">Taipei, Taiwan</span>
+                            <h5>恒遠科技有限公司</h5>
+                            <span class="date">Sept 2022 - Present</span>
+                            <ul>
+                                <li>Focus: EC2 to K8s migration, Docker optimization, CI/CD (Groovy), Monitoring (Prometheus).</li>
+                            </ul>
                         </div>
                     </div>
-                    <p class="job-desc">Responsible for system migration, from EC2 to Kubernetes.</p>
-                    <ul class="job-bullets">
-                        <li>Build Kubernetes on AWS, include design and write all deployment yaml.</li>
-                        <li>Refactor Dockerfile to reduce image size by 40% and time consumption by 30%.</li>
-                        <li>Redesign the CI/CD process and use groovy code to optimize the build process and visualization, and embrace GItOps.</li>
-                        <li>Using ArgoCD and kustomize as a way to deploy kubernetes.</li>
-                        <li>Import prometheus stack to establish a complete monitoring and alarm system, and also used blackbox exporter to check all networklink.</li>
-                    </ul>
-                    <p class="job-desc" style="margin-top: 0.5rem;">And other work items:</p>
-                    <ul class="job-bullets">
-                        <li>Refactor the python scripts and modularize its code.</li>
-                        <li>Check all machines or services and record details.</li>
-                        <li>System maintenance and assist co-workers to solve problems.</li>
-                    </ul>
-                </div>
 
-                <div class="job-item">
-                    <div class="job-header">
-                        <div class="job-title-company">
+                    <!-- Experience 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <img src="https://media.cakeresume.com/image/upload/s--IH5ga_4I--/c_pad,fl_png8,h_200,w_200/v1641194914/wlabbeelw0tbhkg6agyn.png" alt="跨鏈科技 Logo" class="entity-logo large">
+                        <div class="timeline-content">
                             <h4>OPERATE LEADER</h4>
-                            <span class="company-name">跨鏈科技股份有限公司</span>
-                        </div>
-                        <div class="job-meta">
-                            <span class="job-date">February 2022 - July 2022</span>
-                            <span class="job-location">Taipei, Taiwan</span>
+                            <h5>跨鏈科技股份有限公司</h5>
+                            <span class="date">Feb 2022 - July 2022</span>
+                            <ul>
+                                <li>Focus: Crypto exchange relocation, Containerization, Jenkins, Middleware (Zookeeper, Redis).</li>
+                            </ul>
                         </div>
                     </div>
-                    <p class="job-desc">Responsible for cryptocurrency exchange system relocation and maintenance of outsourced system development.</p>
-                    <ul class="job-bullets">
-                        <li>Containerize system services on AWS.</li>
-                        <li>Import Prometheus to establish a complete monitoring and alarm.</li>
-                        <li>Build Jenkins and write CI/CD processes using groovy.</li>
-                        <li>Build middleware: zookeeper, rocketMQ, Redis, etc.</li>
-                        <li>Build applications: gitlab, Nginx, Nexus, Harbor, etc.</li>
-                    </ul>
-                </div>
 
-                <div class="job-item">
-                    <div class="job-header">
-                        <div class="job-title-company">
+                    <!-- Experience 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <img src="https://media.cakeresume.com/image/upload/s--Z7I0XTyW--/c_pad,fl_png8,h_200,w_200/v1536681041/ha4tcs9ixqaqav9xptoi.png" alt="思華科技 Logo" class="entity-logo large">
+                        <div class="timeline-content">
                             <h4>SYSTEM ENGINEER</h4>
-                            <span class="company-name">思華科技有限公司</span>
-                        </div>
-                        <div class="job-meta">
-                            <span class="job-date">March 2020 - December 2021</span>
-                            <span class="job-location">Taipei, Taiwan</span>
-                        </div>
-                    </div>
-                    <ul class="job-bullets">
-                        <li>Import Prometheus and Nagios to establish a complete monitoring and alarm.</li>
-                        <li>Build Jenkins and write CI/CD processes using groovy.</li>
-                        <li>Maintenance 10+ Google Kubernetes Engine.</li>
-                        <li>Write shell script to complete daily work.</li>
-                        <li>Maintenance of the server room(5 cabinets).</li>
-                    </ul>
-                </div>
-
-                <div class="job-item">
-                    <div class="job-header">
-                        <div class="job-title-company">
-                            <h4>RESEARCH ENGINEER/DEVOPS</h4>
-                            <span class="company-name">薩摩亞商百星數位智能股份有限公司台灣分公司</span>
-                        </div>
-                        <div class="job-meta">
-                            <span class="job-date">August 2017 - February 2020</span>
-                            <span class="job-location">Taipei, Taiwan</span>
+                            <h5>思華科技有限公司</h5>
+                            <span class="date">March 2020 - Dec 2021</span>
+                            <ul>
+                                <li>Focus: GKE maintenance, Monitoring (Nagios), Shell scripting.</li>
+                            </ul>
                         </div>
                     </div>
-                    <ul class="job-bullets">
-                        <li>Import containerized application and deploy the project to docker swarm.</li>
-                        <li>Build Jenkins and write CI/CD processes using groovy.</li>
-                        <li>Build internal applications: DHCP, DNS, VPN, etc.</li>
-                        <li>Import Prometheus and ELK.</li>
-                        <li>Build and Maintenance of the computer room.</li>
-                    </ul>
+
+                    <!-- Experience 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <img src="https://media.cakeresume.com/image/upload/s--XEnVS5DO--/c_pad,fl_png8,h_200,w_200/v1655967641/fe2i0thkr4bcatsjmtjn.png" alt="薩摩亞商 Logo" class="entity-logo large">
+                        <div class="timeline-content">
+                            <h4>RESEARCH ENGINEER / DEVOPS</h4>
+                            <h5>薩摩亞商百星數位智能股份有限公司</h5>
+                            <span class="date">Aug 2017 - Feb 2020</span>
+                            <ul>
+                                <li>Focus: Docker Swarm, ELK stack, Jenkins.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </section>
-
-            <div class="section-divider"></div>
-
-            <section class="education-section">
-                <h3 class="section-title">EDUCATION</h3>
-                
-                <div class="edu-item">
-                    <h4 class="edu-school">NATIONAL KAOHSIUNG UNIVERSITY OF SCIENCE AND TECHNOLOGY</h4>
-                    <p class="edu-degree">ELECTRONIC ENGINEERING</p>
-                    <span class="edu-date">2018 - 2019</span>
-                </div>
-
-                <div class="edu-item">
-                    <h4 class="edu-school">SHU-TE UNIVERSITY</h4>
-                    <p class="edu-degree">DEPARTMENT OF COMPUTER SCIENCE & INFORMATION ENGINEERING</p>
-                    <span class="edu-date">2013 - 2017</span>
-                </div>
-            </section>
-
-            <div class="section-divider"></div>
-
-            <section class="certification-section">
-                <h3 class="section-title">LICENSES & CERTIFICATIONS</h3>
-                
-                <div class="cert-item">
-                    <h4 class="cert-name">CCNA</h4>
-                    <p class="cert-issuer">CISCO</p>
-                    <span class="cert-date">Issued August 2016</span>
-                </div>
-            </section>
+            </div>
         </main>
     </div>
 </body>
