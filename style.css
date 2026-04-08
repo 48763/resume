@@ -149,13 +149,13 @@ body {
     font-weight: 500;
 }
 
-/* Custom Skill Tags from user */
+/* Skill Tags */
 .tags-custom p {
     margin-bottom: 8px;
     line-height: 2.2;
 }
 
-.fr-class-skill-tag {
+.skill-tag {
     display: inline-flex;
     align-items: center;
     background-color: var(--tag-bg);
@@ -168,14 +168,24 @@ body {
     margin: 6px 0;
 }
 
-.fr-myicon-img {
+.skill-icon {
     display: inline-block;
     width: 18px;
     height: 18px;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-right: 4px;
+}
+
+/* Experience Notes */
+.experience-note {
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.experience-note--spaced {
+    margin-top: 8px;
 }
 
 /* Main Content */
@@ -297,5 +307,33 @@ body {
     
     .sidebar {
         border-bottom: 1px solid var(--border-color);
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: #fff;
+    }
+
+    .resume-container {
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .social-links a {
+        color: var(--primary-color);
+    }
+
+    .timeline-dot {
+        background-color: var(--primary-color);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .skill-tag {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 }
