@@ -169,12 +169,10 @@ body {
 }
 
 .skill-icon {
-    display: inline-block;
     width: 18px;
     height: 18px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    object-fit: contain;
+    vertical-align: middle;
     margin-right: 4px;
 }
 
